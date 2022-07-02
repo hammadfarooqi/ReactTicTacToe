@@ -43,7 +43,6 @@ const Game = ( {turn, setTurn, winner, setWinner} ) => {
     ])
 
     const checkWinner = () => {
-        console.log(squares)
         //columns
         for (let i = 0; i < 3; i++) {
             if (squares[i].value !== "" && squares[i].value === squares[i+3].value && squares[i].value === squares[i+6].value) {
